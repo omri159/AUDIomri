@@ -1,6 +1,5 @@
 package com.example.hp1.audiomri;
 
-import android.content.ClipData;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -16,7 +15,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     Button bthome,btcars,bthist,bttech;
     ListView lvcars;
-    ArrayList<item> items = new ArrayList<item>();
+    ArrayList<Item> items = new ArrayList<Item>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,10 +23,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         setContentView(R.layout.activity_main);
 
         lvcars= (ListView)findViewById(R.id.lvcars);
-        items.add(new item("First Item",R.drawable.audilogo));
-        items.add(new item("Second Item", R.drawable.audilogo));
+        items.add(new Item("First Item",R.drawable.audilogo));
+        items.add(new Item("Second Item", R.drawable.audilogo));
         lvcars.setOnItemClickListener(this);
-        customAdapter custom = new customAdapter(this,R.layout.custom_row, items);
+        CustomAdapter custom = new CustomAdapter(this,R.layout.custom_row, items);
         lvcars.setAdapter(custom);
 
         bthome=(Button)findViewById(R.id.bthome);
@@ -48,11 +47,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             startActivity(new Intent(this,Cars.class));
         }
         if(view==bthist){
-            startActivity(new Intent(this,hist.class));
+            startActivity(new Intent(this,Hist.class));
 
         }
         if(view==bttech){
-            startActivity(new Intent(this,tech.class));
+            startActivity(new Intent(this,Tech.class));
 
         }
 

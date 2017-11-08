@@ -16,8 +16,9 @@
             </intent-filter>
         </activity>
         <activity android:name=".Cars" />
-        <activity android:name=".hist" />
-        <activity android:name=".tech"></activity>
+        <activity android:name=".Hist" />
+        <activity android:name=".Tech" />
+        <activity android:name=".Fileread"></activity>
     </application>
 
 </manifest>
