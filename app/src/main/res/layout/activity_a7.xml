@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_a7"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:orientation="vertical"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.hp1.audiomri.A7"
+    android:weightSum="1">
+
+    <TextView
+        android:text="A7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView10"
+        android:textSize="24sp"
+        android:gravity="center_horizontal"
+        android:layout_weight="0.72" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="223dp"
+        app:srcCompat="@drawable/a7"
+        android:id="@+id/imageView6" />
+
+    <TextView
+        android:text="Distinctive, unmistakable, A7. From its sharp lights with distinctive light signature via its upstanding front end with a single wide frame and its coupé-like silhouette to its sculptural rear end, the Audi A7 Sportback is an ambassador of a revolutionary language of design, carrying classic quattro genes at the same time. Proof that one can remain true to oneself through reinvention."
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView11"
+        android:textSize="18sp"
+        android:layout_weight="0.47" />
+</LinearLayout>

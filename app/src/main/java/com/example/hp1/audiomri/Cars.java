@@ -22,8 +22,12 @@ public class Cars extends AppCompatActivity implements AdapterView.OnItemClickLi
         setContentView(R.layout.activity_cars);
 
         lvcars= (ListView)findViewById(R.id.lvcars);
-        items.add(new Item("First Item",R.drawable.audilogo));
-        items.add(new Item("Second Item", R.drawable.audilogo));
+        items.add(new Item("A1",R.drawable.a1));
+        items.add(new Item("A3", R.drawable.a3));
+        items.add(new Item("A5",R.drawable.a5));
+        items.add(new Item("A6", R.drawable.a6));
+        items.add(new Item("A7",R.drawable.a7));
+        items.add(new Item("A8", R.drawable.a8));
         lvcars.setOnItemClickListener(this);
         CustomAdapter custom = new CustomAdapter(this,R.layout.custom_row, items);
         lvcars.setAdapter(custom);
@@ -43,6 +47,8 @@ public class Cars extends AppCompatActivity implements AdapterView.OnItemClickLi
 
     @Override
     public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+        Intent[] car={new Intent(this,A1.class),new Intent(this,A3.class),new Intent(this,A5.class),new Intent(this,A6.class),new Intent(this,A7.class),new Intent(this,A8.class)};
+        startActivity(car[i]);
 
     }
 

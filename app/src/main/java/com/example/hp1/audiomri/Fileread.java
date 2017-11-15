@@ -47,9 +47,7 @@ public class Fileread extends AppCompatActivity implements OnClickListener{
         setContentView(R.layout.activity_file_read);
 
         text=(TextView)findViewById(R.id.textView);
-        write = (EditText)findViewById(R.id.editText);
-
-        //button for reading from a file in raw folder
+        write = (EditText)findViewById(R.id.editText);       //button for reading from a file in raw folder
         btRead=(Button)findViewById(R.id.btRead);
         btRead.setOnClickListener(this);
 

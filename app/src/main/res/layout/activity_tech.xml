@@ -44,25 +44,43 @@
                 android:layout_weight="1" />
 
             <Button
-                android:text="History"
+                android:text="Sport History"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/bthist"
                 android:layout_weight="1" />
 
             <Button
-                android:text="Technology"
+                android:text="Quattro"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/bttech" />
         </LinearLayout>
     </HorizontalScrollView>
 
-    <ListView
+    <TextView
+        android:text="Those who know Audi know quattro ..."
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView15"
         android:layout_weight="0.06"
-        android:id="@+id/lvcars"/>
+        android:textSize="24sp"
+        android:gravity="center_horizontal" />
+
+    <TextView
+        android:text="... and once you have driven with quattro, you won’t want to drive any other way. Why? Because this drive system puts engine power to the road in such convincing style."
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView16"
+        android:textSize="18sp"
+        android:layout_weight="0.06" />
+
+    <TextView
+        android:text="Audi is a pioneer of all-wheel drive in high-quality cars. Cutting-edge quattro technology offers dynamism and safety while delivering a unique and exclusive level of driving pleasure. An Audi with quattro drive moves ahead safely and smoothly, even in conditions where two-wheel-drive vehicles lose traction – for instance on slippery or unpaved roads."
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView17"
+        android:layout_weight="0.06" />
 
 
 </LinearLayout>

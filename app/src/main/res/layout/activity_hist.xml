@@ -44,25 +44,32 @@
                 android:layout_weight="1" />
 
             <Button
-                android:text="History"
+                android:text="Sport History"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/bthist"
                 android:layout_weight="1" />
 
             <Button
-                android:text="Technology"
+                android:text="Quattro"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/bttech" />
         </LinearLayout>
     </HorizontalScrollView>
 
-    <ListView
+    <ImageView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_weight="0.06"
-        android:id="@+id/lvcars"/>
+        android:layout_height="114dp"
+        app:srcCompat="@drawable/his"
+        android:id="@+id/imageView8" />
+
+    <TextView
+        android:text="Disregarding the era before World War Two, including the legendary Grand Prix cars from the Auto Union in the 1930s, Audi’s motorsport history began with quattro. In 1978, the Audi Sport department was set up to prepare for motorsport commitments. Three years later Audi celebrated a sensational debut at the Monte Carlo Rally: after ten kilometres of the first stage, Hannu Mikkola overtook a Lancia Stratos that had started a minute before him. In Autumn 1981, a woman won a world championship round for the first time in history with Michèle Mouton at the Rallye San Remo. Dominant victories and two driver and brand titles with the ‘Ur-quattro’ in the World Rally Championship between 1982 and 1984 were an important factor for the market success of quattro drive."
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView14"
+        android:layout_weight="0.06" />
 
 
 </LinearLayout>

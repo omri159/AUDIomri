@@ -10,7 +10,7 @@ import android.widget.ListView;
 
 import java.util.ArrayList;
 
-public class Tech extends AppCompatActivity implements View.OnClickListener,AdapterView.OnItemClickListener {
+public class Tech extends AppCompatActivity implements View.OnClickListener {
 
 
     Button bthome,btcars,bthist,bttech;
@@ -20,14 +20,8 @@ public class Tech extends AppCompatActivity implements View.OnClickListener,Adap
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_tech);
 
-        lvcars= (ListView)findViewById(R.id.lvcars);
-        items.add(new Item("First Item",R.drawable.audilogo));
-        items.add(new Item("Second Item", R.drawable.audilogo));
-        lvcars.setOnItemClickListener(this);
-        CustomAdapter custom = new CustomAdapter(this,R.layout.custom_row, items);
-        lvcars.setAdapter(custom);
 
         bthome=(Button)findViewById(R.id.bthome);
         bthome.setOnClickListener(this);
@@ -60,13 +54,6 @@ public class Tech extends AppCompatActivity implements View.OnClickListener,Adap
 
     }
 
-    @Override
-    public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
 
-
-
-
-
-    }
 }
 

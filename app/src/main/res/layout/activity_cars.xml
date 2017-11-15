@@ -44,14 +44,14 @@
                 android:layout_weight="1" />
 
             <Button
-                android:text="History"
+                android:text="Sport History"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/bthist"
                 android:layout_weight="1" />
 
             <Button
-                android:text="Technology"
+                android:text="Quattro"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/bttech" />

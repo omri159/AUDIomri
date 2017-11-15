@@ -18,7 +18,13 @@
         <activity android:name=".Cars" />
         <activity android:name=".Hist" />
         <activity android:name=".Tech" />
-        <activity android:name=".Fileread"></activity>
+        <activity android:name=".Fileread" />
+        <activity android:name=".A1" />
+        <activity android:name=".A3" />
+        <activity android:name=".A5" />
+        <activity android:name=".A6" />
+        <activity android:name=".A7" />
+        <activity android:name=".A8"></activity>
     </application>
 
 </manifest>
