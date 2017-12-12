@@ -4,4 +4,6 @@
         android:id="@+id/logout" />
     <item android:title="settings"
         android:id="@+id/settings" />
+    <item android:title="camera"
+        android:id="@+id/camera" />
 </menu>
