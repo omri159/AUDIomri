@@ -25,7 +25,8 @@
         <activity android:name=".A6" />
         <activity android:name=".A7" />
         <activity android:name=".A8" />
-        <activity android:name=".CameraActivity"></activity>
+        <activity android:name=".CameraActivity" />
+        <activity android:name=".Audiconcept"></activity>
     </application>
 
 </manifest>

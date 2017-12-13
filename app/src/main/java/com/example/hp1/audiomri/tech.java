@@ -44,7 +44,7 @@ public class Tech extends AppCompatActivity implements View.OnClickListener {
             startActivity(new Intent(this,Hist.class));
 
         }
-        if(view==bttech){
+        if(view==bthome){
             startActivity(new Intent(this,Tech.class));
 
         }

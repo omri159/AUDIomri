@@ -27,7 +27,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         setContentView(R.layout.activity_main);
 
         lvcars= (ListView)findViewById(R.id.lvcars);
-        items.add(new Item("First Item",R.drawable.audilogo));
+        items.add(new Item("conceptcar",R.drawable.audiconcept));
         items.add(new Item("Second Item", R.drawable.audilogo));
         lvcars.setOnItemClickListener(this);
         CustomAdapter custom = new CustomAdapter(this,R.layout.custom_row, items);
@@ -51,6 +51,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             startActivity(new Intent(this, Cars.class));
         }
         if (view == bthist) {
+
             startActivity(new Intent(this, Hist.class));
 
         }
@@ -60,7 +61,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         }
     }
 
-    @Override
+        @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.main_menu,menu);
         return super.onCreateOptionsMenu(menu);
@@ -109,6 +110,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     @Override
     public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+        Intent[] home={new Intent(this,Audiconcept.class),new Intent(this,A1.class)};
+        startActivity(home[i]);
+
+
 
 
 
