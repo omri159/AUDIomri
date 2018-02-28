@@ -1,5 +1,6 @@
 package com.example.hp1.audiomri;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -27,6 +28,15 @@ public class login extends AppCompatActivity implements View.OnClickListener{
 
     @Override
     public void onClick(View view) {
+        if(view==login) {
+            Intent i3 = new Intent(getBaseContext(), MainActivity.class);
+            startActivity(i3);
+        }
+        if(view==signup){
+            Intent i4 = new Intent(getBaseContext(), MainActivity.class);
+            startActivity(i4);
+
+        }
 
     }
 }

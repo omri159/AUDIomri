@@ -18,20 +18,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
 
     Button bthome,btcars,bthist,bttech;
-    ListView lvcars;
-    ArrayList<Item> items = new ArrayList<Item>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        lvcars= (ListView)findViewById(R.id.lvcars);
-        items.add(new Item("conceptcar",R.drawable.audiconcept));
-        items.add(new Item("Second Item", R.drawable.audilogo));
-        lvcars.setOnItemClickListener(this);
-        CustomAdapter custom = new CustomAdapter(this,R.layout.custom_row, items);
-        lvcars.setAdapter(custom);
 
         bthome=(Button)findViewById(R.id.bthome);
         bthome.setOnClickListener(this);
@@ -79,7 +71,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
 
-                        Intent i2 = new Intent(getBaseContext(), A1.class);
+                        Intent i2 = new Intent(getBaseContext(),login.class);
                         startActivity(i2);
 
 

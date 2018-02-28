@@ -58,11 +58,27 @@
         </LinearLayout>
     </HorizontalScrollView>
 
-    <ListView
+    <TextView
+        android:text="TextView"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView23"
         android:layout_weight="0.06"
-        android:id="@+id/lvcars"/>
+        tools:text="CONCEBTA" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        app:srcCompat="@drawable/audiconcept"
+        android:id="@+id/imageView10"
+        android:layout_weight="0.08" />
+
+    <TextView
+        android:text="Quatt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView24"
+        android:layout_weight="0.06" />
 
 
 </LinearLayout>
